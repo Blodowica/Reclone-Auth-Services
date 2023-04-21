@@ -19,13 +19,13 @@ jobs:
         dotnet-version: '6.0.x'
 
     - name: Restore NuGet packages
-      working-directory: ./Reclone-Auht-Service
+      working-directory: ./Reclone Auht Service
       run: dotnet restore
 
     - name: Build
-      working-directory: ./Reclone-Auth-Service
+      working-directory: ./Reclone Auth Service
       run: dotnet build --configuration Release
 
     - name: Test
-      working-directory: ./Reclone-Auth-Service
+      working-directory: ./Reclone Auth Service
       run: dotnet test --no-restore --verbosity normal
